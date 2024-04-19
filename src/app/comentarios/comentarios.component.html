@@ -1,0 +1,6 @@
+<h2>Seccion de Comentarios</h2>
+
+<app-comentarios-hijo (llamadaPadre)="recibirDato($event)"></app-comentarios-hijo>
+@for (item of comentarios; track item) {
+    <p>- {{item.comentario}}</p>
+}
